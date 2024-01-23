@@ -45,8 +45,10 @@ class _ToDoListState extends State<ToDoList> {
       backgroundColor: Color.fromARGB(255, 237, 205, 233),
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 109, 100, 133),
-        title: Text('To-Do List', style: TextStyle(
-          fontWeight: FontWeight.bold,color: Colors.white),),
+        title: Text(
+          'To-Do List',
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+        ),
         centerTitle: true,
         toolbarHeight: 75,
       ),
@@ -58,10 +60,15 @@ class _ToDoListState extends State<ToDoList> {
               itemBuilder: (context, index) {
                 return ListTile(
                   // title: Text(tasks[index]),
-                  title: Text(tasks[index]['value'].toString(), style: TextStyle(
-                    color: Color.fromARGB(255, 109, 100, 133)),),
+                  title: Text(
+                    tasks[index]['value'].toString(),
+                    style: TextStyle(color: Color.fromARGB(255, 109, 100, 133)),
+                  ),
                   trailing: IconButton(
-                    icon: Icon(Icons.delete,color: Colors.white,),
+                    icon: Icon(
+                      Icons.delete,
+                      color: Colors.white,
+                    ),
                     onPressed: () {
                       setState(() {
                         tasks.removeAt(index);
@@ -84,11 +91,11 @@ class _ToDoListState extends State<ToDoList> {
                 addString(content);
               },
               decoration: InputDecoration(
-                hintText: 'Add a task',hintStyle: TextStyle(color:  Color.fromARGB(255, 109, 100, 133)),
+                hintText: 'Add a task',
+                hintStyle: TextStyle(color: Color.fromARGB(255, 109, 100, 133)),
                 suffixIcon: IconButton(
                   icon: Icon(Icons.add),
                   onPressed: () {
-                   
                     Addlist();
                   },
                 ),
