@@ -88,19 +88,7 @@ class _ToDoListState extends State<ToDoList> {
                 suffixIcon: IconButton(
                   icon: Icon(Icons.add),
                   onPressed: () {
-                    // setState(() {
-                    //   tasks.add(tasks.length.toString()); // You can modify this to add custom task names
-                    // });
-                    // setState(() {
-                    //   // Ensure that the user entered a non-empty task
-                    //   if (tasks.length > 0 && tasks.last.isEmpty) {
-                    //     // Remove the last empty task if present
-                    //     tasks.removeLast();
-                    //   }
-                    //   tasks.add(tasks.length > 0
-                    //       ? ''
-                    //       : 'New Task'); // Default task name if empty
-                    // });
+                   
                     Addlist();
                   },
                 ),
